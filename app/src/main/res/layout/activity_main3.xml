@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please Enter Your Details Below"
+        android:textColor="#FF5722"
+        android:textSize="24dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#020202"
+        android:textSize="24dp">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+        android:hint="Beginner or Advance"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_below="@+id/name">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_diet_plan"
+        android:hint="Enter Your Diet Plan"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_below="@+id/category">
+
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInsert"
+        android:textSize="24dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/your_diet_plan">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:textSize="24dp"
+        android:text="Update the Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnInsert">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:textSize="24dp"
+        android:text="Delete Existing Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnUpdate">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnView"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnDelete">
+
+    </Button>
+
+
+
+</RelativeLayout>
