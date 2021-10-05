@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculateWater">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="412dp"
+        android:layout_height="56dp"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="45dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/wtdwr"
+        android:text="Welcome to Drinking Water Reminder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/caltitle"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/caltitle"
+        android:text="Calculator to get an overview of the water you drink per day"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="After Waking up"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ml1"
+        app:layout_constraintStart_toStartOf="@+id/caltitle"
+        app:layout_constraintTop_toTopOf="@+id/ml1"
+        app:layout_constraintVertical_bias="0.194"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/ml1"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="15dp"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/caltitle"
+        app:layout_constraintTop_toBottomOf="@+id/caltitle"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="After Workout"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ml2"
+        app:layout_constraintStart_toStartOf="@+id/txt1"
+        app:layout_constraintTop_toTopOf="@+id/ml2"
+        app:layout_constraintVertical_bias="0.276"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/ml2"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="15dp"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/ml1"
+        app:layout_constraintTop_toBottomOf="@+id/ml1"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="Half an hour before breakfast"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ml3"
+        app:layout_constraintStart_toStartOf="@+id/txt2"
+        app:layout_constraintTop_toTopOf="@+id/ml3"
+        app:layout_constraintVertical_bias="0.358"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/ml3"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="15dp"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/ml2"
+        app:layout_constraintTop_toBottomOf="@+id/ml2"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="Half an hour before lunch"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ml4"
+        app:layout_constraintStart_toStartOf="@+id/txt3"
+        app:layout_constraintTop_toTopOf="@+id/ml4"
+        app:layout_constraintVertical_bias="0.445"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/ml4"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="15dp"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/ml3"
+        app:layout_constraintTop_toBottomOf="@+id/ml3"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="Half an hour before dinner"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ml5"
+        app:layout_constraintStart_toStartOf="@+id/txt4"
+        app:layout_constraintTop_toTopOf="@+id/ml5"
+        app:layout_constraintVertical_bias="0.541"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/ml5"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="15dp"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/ml4"
+        app:layout_constraintTop_toBottomOf="@+id/ml4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="Before going to bed"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ml6"
+        app:layout_constraintStart_toStartOf="@+id/txt5"
+        app:layout_constraintTop_toTopOf="@+id/ml6"
+        app:layout_constraintVertical_bias="0.638"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/ml6"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="15dp"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/ml5"
+        app:layout_constraintTop_toBottomOf="@+id/ml5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gender"
+        android:text="Total"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tot1"
+        app:layout_constraintEnd_toStartOf="@+id/tot1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tot1"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/tot1"
+        android:layout_width="157dp"
+        android:layout_height="56dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt7"
+        app:layout_constraintTop_toBottomOf="@+id/ml6" />
+
+    <Button
+        android:id="@+id/btninsert1"
+        android:layout_width="301dp"
+        android:layout_height="51dp"
+        android:contentDescription="@string/btnok"
+        android:text="CALCULATE"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tot1" />
+
+    <Button
+        android:id="@+id/btninsert2"
+        android:layout_width="301dp"
+        android:layout_height="51dp"
+        android:contentDescription="@string/btnok"
+        android:text="CLEAR"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btninsert1" />
+
+    <ImageView
+        android:id="@+id/arrow4"
+        android:layout_width="51dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/welcome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
