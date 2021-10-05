@@ -59,42 +59,27 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
-        android:id="@+id/txtAExA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/txtAExA"
-        android:text="(A) High Knees"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAdvancedWorkout" />
-
-    <TextView
         android:id="@+id/txtAExB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="@string/txtAExB"
-        android:text="(B) Squat Hold"
+        android:text="(A) Squat Hold"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExA" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAdvancedWorkout" />
 
     <TextView
         android:id="@+id/txtAExC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/txtAExC"
-        android:text="(C) Wide Push Ups (on knees)"
+        android:text="(B) Wide Push Ups (on knees)"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -109,7 +94,7 @@
         android:layout_height="21dp"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/txtAExD"
-        android:text="(D) T - Rotation"
+        android:text="(C) T - Rotation"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -122,14 +107,14 @@
         android:id="@+id/txtAExE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:contentDescription="@string/txtAExE"
-        android:text="(E) Close Push Ups (on knees)"
+        android:text="(D) Spider Elbow Plank"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAExD" />
 
@@ -137,14 +122,14 @@
         android:id="@+id/txtAExF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:contentDescription="@string/txtAExF"
-        android:text="(F) Spider Elbow Plank"
+        android:text="(E) Superman Hold"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAExE" />
 
@@ -152,127 +137,37 @@
         android:id="@+id/txtAExG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:contentDescription="@string/txtAExG"
-        android:text="(G) Superman"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExF" />
-
-    <TextView
-        android:id="@+id/txtAExH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtAExH"
-        android:text="(H) Superman Hold"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExG" />
-
-    <TextView
-        android:id="@+id/txtAExI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtAExI"
-        android:text="(I) Crunch"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExH" />
-
-    <TextView
-        android:id="@+id/txtAExJ"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtAExJ"
-        android:text="(J) Jack Knife"
+        android:text="(F) Jack Knife"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExI" />
-
-    <TextView
-        android:id="@+id/txtAExK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtAExK"
-        android:text="(K) AB Hold"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExJ" />
-
-    <TextView
-        android:id="@+id/txtAExL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtAExL"
-        android:text="(L) Twisting Jump"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExK" />
-
-    <TextView
-        android:id="@+id/txtAExM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtAExM"
-        android:text="(M) Glute Bridge Hold"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExL" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAExF" />
 
     <Button
         android:id="@+id/btnBackA"
         android:layout_width="93dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="176dp"
         android:contentDescription="@string/btnBackA"
         android:text="BACK"
         android:textColor="#FFFFFF"
         app:backgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAExM" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAExG" />
 
     <ImageView
         android:id="@+id/imgAPage"
         android:layout_width="173dp"
         android:layout_height="348dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="4dp"
         android:contentDescription="@string/imgAPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

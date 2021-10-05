@@ -10,6 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessWorld">
         <activity
+            android:name=".MainActivityAdExG"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAdExF"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAdExE"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAdExD"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAdExC"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAdExB"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityBeExF"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityBeExE"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityBeExD"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityBeExC"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityBeExB"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityBeExA"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity6"
             android:exported="true" />
         <activity

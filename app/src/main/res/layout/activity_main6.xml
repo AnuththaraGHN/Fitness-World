@@ -111,7 +111,7 @@
         android:id="@+id/txtBExD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/txtBExD"
         android:text="(D) Slow Bicycle Crunch"
         android:textColor="#000000"
@@ -126,7 +126,7 @@
         android:id="@+id/txtBExE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="(E) Crunch With Straight Legs"
         android:textColor="#000000"
         android:textSize="17sp"
@@ -140,7 +140,7 @@
         android:id="@+id/txtBExF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/txtBExF"
         android:text="(F) Slow Mountain Climber"
         android:textColor="#000000"
@@ -151,71 +151,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBExE" />
 
-    <TextView
-        android:id="@+id/txtBExG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:contentDescription="@string/txtBExG"
-        android:text="(G) Plank"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBExF" />
-
-    <TextView
-        android:id="@+id/txtBExH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:contentDescription="@string/txtBExH"
-        android:text="(H) Superman"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBExG" />
-
-    <TextView
-        android:id="@+id/txtBExI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:contentDescription="@string/txtBExI"
-        android:text="(I) Hip Stretch Right"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBExH" />
-
-    <TextView
-        android:id="@+id/txtBExL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/txtBExL"
-        android:text="(J) Hip Stretch Left"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBExI" />
-
     <Button
         android:id="@+id/btnBackB"
         android:layout_width="93dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="60dp"
         android:contentDescription="@string/btnBackB"
         android:text="BACk"
         android:textColor="#FFFFFF"
@@ -223,14 +163,14 @@
         app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imgBPage"
         android:layout_width="196dp"
         android:layout_height="325dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="212dp"
         android:contentDescription="@string/imgBPage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

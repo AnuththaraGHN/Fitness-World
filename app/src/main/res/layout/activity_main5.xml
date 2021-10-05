@@ -193,8 +193,8 @@
 
     <ImageView
         android:id="@+id/imgcalculate"
-        android:layout_width="293dp"
-        android:layout_height="139dp"
+        android:layout_width="283dp"
+        android:layout_height="115dp"
         android:layout_marginBottom="4dp"
         android:contentDescription="@string/imgcalculate"
         app:layout_constraintBottom_toBottomOf="parent"

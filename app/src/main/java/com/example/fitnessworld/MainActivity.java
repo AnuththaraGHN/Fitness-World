@@ -13,12 +13,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Initialize variables
     EditText name, category, Goal;
     Button insert, update, delete, view;
     DBHelper DB;
     public Button button;
-
-
 
 
     @Override
@@ -36,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //assign variables
         name = findViewById(R.id.name);
         category = findViewById(R.id.category);
         Goal = findViewById(R.id.Goal);

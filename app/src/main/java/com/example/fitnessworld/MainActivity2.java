@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+
+
 public class MainActivity2 extends AppCompatActivity {
 
     public Button button1;
@@ -15,6 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     public Button button3;
     public Button button6;
     public ImageView img;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
         button3 = (Button) findViewById(R.id.button2);
         button6 = (Button) findViewById(R.id.button5);
         img = (ImageView) findViewById(R.id.imageView);
+
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,5 +75,7 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }
