@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="50dp"
         android:gravity="center_horizontal"
-        android:text="LOGIN"
+        android:text="SIGN IN"
         android:textColor="@color/black"
         android:textSize="50dp"
         android:textStyle="bold" />
@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/signin1"
-        android:text="Sing in"
+        android:text="LOGIN"
         android:textSize="20dp"
         android:backgroundTint="@color/black"
         android:layout_marginBottom="30dp"/>
