@@ -68,8 +68,6 @@ public class calculateWater extends AppCompatActivity {
                 ed7.setText(String.valueOf(tot));
             }
 
-
-
     }
 
     public void clear(){
