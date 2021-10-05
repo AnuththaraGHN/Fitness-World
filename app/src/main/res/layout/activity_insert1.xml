@@ -190,10 +190,11 @@
         android:id="@+id/btnupdate"
         android:layout_width="305dp"
         android:layout_height="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:text="Edit"
         app:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="@+id/btninsert"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btninsert"
         app:layout_constraintTop_toBottomOf="@+id/btninsert" />
 
@@ -201,11 +202,10 @@
         android:id="@+id/btndelete"
         android:layout_width="303dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:text="Clear"
         app:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="@+id/btnupdate"
-        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="@+id/btnupdate"
         app:layout_constraintTop_toBottomOf="@+id/btnupdate" />
 
@@ -213,11 +213,11 @@
         android:id="@+id/btnview"
         android:layout_width="303dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="View Data"
         app:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="@+id/btndelete"
-        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btndelete"
         app:layout_constraintTop_toBottomOf="@+id/btndelete" />
 
