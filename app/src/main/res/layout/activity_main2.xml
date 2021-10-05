@@ -96,7 +96,7 @@
         android:layout_width="271dp"
         android:layout_height="65dp"
         android:layout_marginEnd="68dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="120dp"
         android:text="Women BMR Calculation "
         android:textColor="#FFFFFF"
         android:textStyle="bold"
