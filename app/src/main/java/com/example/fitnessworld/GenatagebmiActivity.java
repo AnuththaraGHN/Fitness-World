@@ -14,8 +14,9 @@ import android.widget.TextView;
 
 public class GenatagebmiActivity extends AppCompatActivity {
 
-    android.widget.Button mrecalculatebmi;
+    android.widget.Button mrecalculatebmi,mgenarate_your_owne_Ditetplan;
 
+    //declare variables
     TextView mbmidisplay,mbmicategory,mgender;
     Intent intent;
     ImageView mimageview;
@@ -33,33 +34,42 @@ public class GenatagebmiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_genatagebmi);
 
-        getSupportActionBar().setElevation(0);
-        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
-        getSupportActionBar().setTitle("Result");
+        //change action bar features
+//        getSupportActionBar().setElevation(0);
+//        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
+//        getSupportActionBar().setTitle("Result");
         ColorDrawable colorDrawable=new ColorDrawable(Color.parseColor("#FFAC1C"));
-        getSupportActionBar().setBackgroundDrawable(colorDrawable);
+//        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
-        intent=getIntent();
+        intent=getIntent();//collect data from previous activity
 
+        //Assign xml id to java id.
         mbmidisplay=findViewById(R.id.bmidisplay);
         mbmicategory=findViewById(R.id.bmicategory);
         mgender=findViewById(R.id.genderdisplay);
         mbackground=findViewById(R.id.contentlayout);
         mimageview=findViewById(R.id.imageview);
         mrecalculatebmi=findViewById(R.id.recalculatebmi);
+        mgenarate_your_owne_Ditetplan=findViewById(R.id.genarate_your_owne_Ditetplan);
 
+        //take the data from user for height and weight.
         height=intent.getStringExtra("height");
         weight=intent.getStringExtra("weight");
 
+        //convert height and weight into float
         intheight=Float.parseFloat(height);
         intweight=Float.parseFloat(weight);
 
+        //convert height into meter
         intheight=intheight/100;
 
+        //calculate bmi
         intbmi=intweight/(intheight*intheight);
 
+        //convert bmi inti string
         mbmi=Float.toString(intbmi);
 
+        //check bmi in different gender,height,weight and age.
         if(intbmi<16)
         {
             mbmicategory.setText("Severe Thinness");
@@ -97,16 +107,32 @@ public class GenatagebmiActivity extends AppCompatActivity {
                 mimageview.setImageResource(R.drawable.warning);
             }
 
-        mgender.setText(intent.getStringExtra("gender"));
+        //show gender of user
+        mgender.setText(intent.getStringExtra("gender"));//gender is fetching from previous activity
         mbmidisplay.setText(mbmi);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
+        //initialising buttons
         mrecalculatebmi=findViewById(R.id.recalculatebmi);
 
+        //create a listener for recalculatebmi button.
         mrecalculatebmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(GenatagebmiActivity.this,BMICalculatorActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        //initialising buttons
+        mgenarate_your_owne_Ditetplan=findViewById(R.id.genarate_your_owne_Ditetplan);
+
+        //create a listener for generate_your_own_Diet_plan button.
+        mgenarate_your_owne_Ditetplan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(GenatagebmiActivity.this,MainActivity3.class);
                 startActivity(intent);
                 finish();
             }

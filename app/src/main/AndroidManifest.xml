@@ -12,9 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessWorld"
         tools:ignore="AllowBackup,WrongManifestParent">
-        <activity
-            android:name=".MainActivity3"
-            android:exported="true" />
+        <activity android:name=".MainActivity3"
+            android:exported="true"
+            tools:ignore="IntentFilterExportedReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".Home" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".Search" />
@@ -22,17 +28,12 @@
         <activity android:name=".MealPlan" />
         <activity android:name=".GenatagebmiActivity" />
         <activity android:name=".Genatagebmi" />
-        <activity android:name=".BMICalculatorActivity" />
-        <activity android:name=".BMICalculator" />
-        <activity
-            android:name=".MainActivity"
-            tools:ignore="IntentFilterExportedReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".BMICalculatorActivity"/>
+        <activity android:name=".BMICalculator"/>
+        <activity android:name=".MainActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
+
     </application>
 
 </manifest>

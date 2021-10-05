@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //remove the action bar and also title bar from main screen.
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },3000);
+        },3000);//3S will display main screen.
 
         }
 }

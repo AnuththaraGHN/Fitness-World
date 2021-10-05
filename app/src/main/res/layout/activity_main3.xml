@@ -65,13 +65,13 @@
     </Button>
 
     <Button
+        android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnUpdate"
-        android:textSize="24dp"
-        android:text="Update the Data"
+        android:layout_below="@+id/btnInsert"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/btnInsert">
+        android:text="Update the Data"
+        android:textSize="24dp">
 
     </Button>
 

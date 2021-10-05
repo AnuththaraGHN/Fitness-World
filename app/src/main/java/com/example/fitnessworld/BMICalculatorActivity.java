@@ -1,9 +1,5 @@
 package com.example.fitnessworld;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,21 +9,26 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 public class BMICalculatorActivity extends AppCompatActivity {
 
     android.widget.Button mcalculatebmi;
 
+    //creating variables
     TextView mcurrentheight;
     TextView mcurrentage,mcurrentweight;
     ImageView mdecrementweight,mincrementweight,mdecrementage,mincrementage;
     SeekBar mseekbarforheight;
     RelativeLayout mmale,mfemale;
 
+    //creating default variables
     int intweight = 55;
     int intage = 22;
     int currentprogress;
     String mintprogress="170";
-    String typeofuser="0";
+    String typeofuser;
     String weight2="55";
     String age2="22";
 
@@ -36,8 +37,8 @@ public class BMICalculatorActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmicalculator);
-        getSupportActionBar().hide();
 
+        //Assign xml id to java id. Initialising buttons, data and seekbar
         mcalculatebmi=findViewById(R.id.calculatebmi);
         mcurrentage=findViewById(R.id.currentage);
         mcurrentweight=findViewById(R.id.currentweight);
@@ -50,15 +51,19 @@ public class BMICalculatorActivity extends AppCompatActivity {
         mmale=findViewById(R.id.male);
         mfemale=findViewById(R.id.female);
 
+
+        //create a listener for male button.
         mmale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalefocus));
+
                 mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalenotfocus));
+                mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalefocus));
                 typeofuser="Male";
             }
         });
 
+        //create a listener for female button.
         mfemale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +75,7 @@ public class BMICalculatorActivity extends AppCompatActivity {
 
         mseekbarforheight.setMax(300);
         mseekbarforheight.setProgress(170);
+        //create a listener for seekbar.
         mseekbarforheight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -89,6 +95,7 @@ public class BMICalculatorActivity extends AppCompatActivity {
             }
         });
 
+        //create a listener for age increment button.
         mincrementage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,6 +105,7 @@ public class BMICalculatorActivity extends AppCompatActivity {
             }
         });
 
+        //create a listener for age decrement button.
         mdecrementage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,6 +115,7 @@ public class BMICalculatorActivity extends AppCompatActivity {
             }
         });
 
+        //create a listener for weight increment button.
         mincrementweight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,6 +125,7 @@ public class BMICalculatorActivity extends AppCompatActivity {
             }
         });
 
+        //create a listener for weight decrement button.
         mdecrementweight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,15 +135,17 @@ public class BMICalculatorActivity extends AppCompatActivity {
             }
         });
 
+        //create a listener for calculate BMI button.
         mcalculatebmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(typeofuser.equals("0")){
-                    Toast.makeText(getApplicationContext(),"Select Your Gender First", Toast.LENGTH_SHORT).show();
+                //check conditions and display toast message
+                if(typeofuser.isEmpty()){
+                    Toast.makeText(BMICalculatorActivity.this,"Select Your Gender First", Toast.LENGTH_SHORT).show();
                 }
                 else if(mintprogress.equals("0")){
-                    Toast.makeText(getApplicationContext(),"Select Your Height First",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(BMICalculatorActivity.this,"Select Your Height First",Toast.LENGTH_SHORT).show();
                 }
                 else if(intage==0 || intage<0){
                     Toast.makeText(getApplicationContext(),"Age is Incorrect",Toast.LENGTH_SHORT).show();
@@ -143,6 +155,8 @@ public class BMICalculatorActivity extends AppCompatActivity {
                 }
                 else {
                     Intent intent = new Intent(BMICalculatorActivity.this, GenatagebmiActivity.class);
+
+                    //in here pass some data, because this data need to calculate bmi
                     intent.putExtra("gender",typeofuser);
                     intent.putExtra("height",mintprogress);
                     intent.putExtra("weight",weight2);

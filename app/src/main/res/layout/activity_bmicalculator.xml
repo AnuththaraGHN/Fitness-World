@@ -190,7 +190,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:layout_toRightOf="@+id/centerverticalline"
-        android:layout_toEndtOf="@+id/centerverticalline"
         android:background="@drawable/cardbackground1">
 
         <TextView

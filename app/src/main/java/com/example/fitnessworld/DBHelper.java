@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context){
         super(context, "text3.db", null, 1);
-    }
+    }//this text3 database table is unique for this DB class.
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("create Table Userdetails(name TEXT primary key, category TEXT, your_diet_plan TEXT)");
+        DB.execSQL("create Table text3(name TEXT primary key, category TEXT, your_diet_plan TEXT)");//create table & columns
     }
 
     @Override
@@ -23,12 +23,13 @@ public class DBHelper extends SQLiteOpenHelper {
         DB.execSQL("drop Table if exists Userdetails");
     }
 
+    //this is the method of insertion of the data into SQL database. In here we pass the strings.
     public Boolean insertuserdata(String name,String category, String your_diet_plan) {
-        SQLiteDatabase DB = this.getWritableDatabase();
+        SQLiteDatabase DB = this.getWritableDatabase();//get writeable values and pass it to database
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", name);
-        ContentValues.put("category", category);
-        ContentValues.put("your_diet_plan", your_diet_plan);
+        contentValues.put("category", category);
+        contentValues.put("your_diet_plan", your_diet_plan);
         long result = DB.insert ("userdetails", null, contentValues);
         if (result == -1) {
             return false;
@@ -37,14 +38,15 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //this is the method of update data into SQL database. In here we can't update name.
     public Boolean updateuserdata(String name,String category, String your_diet_plan) {
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        ContentValues.put("category", category);
-        ContentValues.put("your_diet_plan", your_diet_plan);
+        contentValues.put("category", category);
+        contentValues.put("your_diet_plan", your_diet_plan);
         Cursor cursor = DB.rawQuery("Select * from Userdetails where name=?", new String[] {name});
         if(cursor.getCount()>0){
-        long result = DB.update ("userdetails", contentValues, "name=?", new String[] {name});
+        long result = DB.update ("userdetails", contentValues, "name=?", new String[] {name});//check name.
         if (result == -1) {
             return false;
         } else {
@@ -55,6 +57,8 @@ public class DBHelper extends SQLiteOpenHelper {
         }
 
     }
+
+    //this is the method of delete data into SQL database.
     public Boolean deletedata(String name) {
         SQLiteDatabase DB = this.getWritableDatabase();
         Cursor cursor = DB.rawQuery("Select * from Userdetails where name=?", new String[] {name});
@@ -71,6 +75,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
+    //this is the method of retrieve data into SQL database.
     public Cursor getdata () {
         SQLiteDatabase DB = this.getWritableDatabase();
         Cursor cursor = DB.rawQuery("Select * from Userdetails", null);
