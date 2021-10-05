@@ -155,7 +155,7 @@
         android:id="@+id/btnBackB"
         android:layout_width="93dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="68dp"
         android:contentDescription="@string/btnBackB"
         android:text="BACk"
         android:textColor="#FFFFFF"
