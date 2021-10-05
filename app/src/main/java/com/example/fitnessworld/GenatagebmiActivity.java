@@ -35,9 +35,9 @@ public class GenatagebmiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_genatagebmi);
 
         //change action bar features
-        getSupportActionBar().setElevation(0);
-        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
-        getSupportActionBar().setTitle("Result");
+//        getSupportActionBar().setElevation(0);
+//        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
+//        getSupportActionBar().setTitle("Result");
         ColorDrawable colorDrawable=new ColorDrawable(Color.parseColor("#FFAC1C"));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
