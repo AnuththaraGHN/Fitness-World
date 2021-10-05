@@ -18,12 +18,12 @@
 
     <ImageView
         android:id="@+id/imgViewBeExF"
-        android:layout_width="68dp"
-        android:layout_height="54dp"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="340dp"
-        android:layout_marginBottom="582dp"
+        android:layout_marginEnd="342dp"
+        android:layout_marginBottom="596dp"
         android:contentDescription="@string/imgViewBeExF"
         app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
@@ -61,7 +61,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="86dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginBottom="501dp"
+        android:layout_marginBottom="490dp"
         android:contentDescription="@string/txtViewSlowMountainClimber"
         android:text="(F) Slow Mountain Climber"
         android:textColor="#000000"

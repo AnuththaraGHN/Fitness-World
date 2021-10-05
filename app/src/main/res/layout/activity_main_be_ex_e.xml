@@ -18,12 +18,12 @@
 
     <ImageView
         android:id="@+id/imgViewBeExE"
-        android:layout_width="68dp"
-        android:layout_height="54dp"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="338dp"
-        android:layout_marginBottom="592dp"
+        android:layout_marginEnd="342dp"
+        android:layout_marginBottom="604dp"
         android:contentDescription="@string/imgViewBeExE"
         app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
@@ -59,9 +59,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="468dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="465dp"
         android:contentDescription="@string/txtViewCrunchWithStraightLegs"
         android:text="(E) Crunch With Straight Legs"
         android:textColor="#000000"
