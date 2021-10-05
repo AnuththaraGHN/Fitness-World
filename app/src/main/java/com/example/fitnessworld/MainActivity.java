@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },3000);//3S will display main screen.
+        },4000);//4S will display main screen.
 
         }
 }
